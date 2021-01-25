@@ -1,0 +1,500 @@
+   64  rm test7.txt
+   65  ls
+   66  git status
+   67  touch testing1.txt testing2.txt
+   68  ls
+   69  git status
+   70  rm testing1.txt
+   71  git status
+   72  git commit -a -m "commting"
+   73  git status
+   74  git add .
+   75  git status
+   76  git restore new2.txt
+   77  clear
+   78  ls
+   79  touch new2.txt new3.txt
+   80  git status
+   81  rm new2.txt
+   82  ls
+   83  git status
+   84  git restore new2.txt
+   85  rm new2.txt
+   86  touch new2.txt
+   87  git status
+   88  git add .
+   89  git status
+   90  rm new2.txt
+   91  git status
+   92  git restore new2.txt
+   93  git status
+   94  clear
+   95  git status
+   96  git stash
+   97  git stash show
+   98  git stash list
+   99  git reset 
+  100  git status
+  101  git reset -a 
+  102  git log --oneline
+  103  git reset new2.txt
+  104  git status
+  105  clear
+  106  git status
+  107  ls
+  108  git stash show
+  109  ls
+  110  git stash apply
+  111  ls
+  112  clear
+  113  git status
+  114  git stash
+  115  git status
+  116  git stash show
+  117  cat new2.txt
+  118  git stash apply
+  119  git status
+  120  clear
+  121  git status
+  122  git stash new2.txt
+  123  git stash
+  124  git stash show
+  125  git stash apply new2.txt
+  126  git stash --help
+  127  git stash list
+  128  git stash apply stash@{3}
+  129  git statsh
+  130  git stash
+  131  git stash list
+  132  git stash apply stash@{1}
+  133  git reset new2.txt
+  134  git status
+  135  git stash
+  136  git stash show
+  137  git stash -u
+  138  git stash show
+  139  git status
+  140  git stash show
+  141  git stash list
+  142  git stash apply stash@{6}
+  143  git status
+  144  git stash apply stash@{7}
+  145  git status
+  146  git add .
+  147  git commit -m "final change"
+  148  git status
+  149  git log --oneline
+  150  clear
+  151  git log --oneline
+  152  git show ac8938f
+  153  git revert ac8938f
+  154  ls
+  155  git log --oneline
+  156  git diff ac8938f..6647f1c
+  157  git diff ac8938f 594498c
+  158  clear
+  159  git log --oneline
+  160  git show HEAD
+  161  git log 
+  162  clear
+  163  git log 5
+  164  git log --help
+  165  git log -n 5
+  166  git log -n 2
+  167  clear
+  168  ls
+  169  git tag
+  170  git tag -a V1.1 -m "this is my code"
+  171  git tag
+  172  git show V1.1
+  173  touch new9.txt
+  174  notepad new9.txt
+  175  git add .
+  176  git commit -m "after tag commit"
+  177  git log --oneline
+  178  git show V1.1
+  179  git fetch V1.1
+  180  git tag -a 9985311889 - m "new tag"
+  181  git tag -a 9985311889 -m "new tag"
+  182  git tag
+  183  git show 9985311889
+  184  git checkout V1.1
+  185  git status
+  186  git checkout master
+  187  git tag
+  188  exit
+  189  code .
+  190  git branch
+  191  git status
+  192  git commit -a -m "all file deleted"
+  193  git status
+  194  ls
+  195  git checkout newbranch
+  196  ls
+  197  ls
+  198  git status
+  199  git commit -a -m "all file deleted"
+  200  git status
+  201  git checkout secondbranch
+  202  ls
+  203  clear
+  204  git checkout master
+  205  ls
+  206  git checkout secondbranch
+  207  ls
+  208  git merge secondbranch master
+  209  git checkout master
+  210  ls
+  211  git merge secondbrnach 
+  212  git merge secondbrnach master
+  213  git merge secondbranch
+  214  clear
+  215  ls
+  216  git remote
+  217  git remote -url
+  218  git remote -url show
+  219  git remote show
+  220  git remote -v
+  221  clear
+  222  ls
+  223  git checkout newbranch
+  224  ls
+  225  touch newbranch1.txt
+  226  notepad newbranch1.txt 
+  227  ls
+  228  clear
+  229  git checkout master
+  230  git merge newbranch
+  231  ls
+  232  git chekout newbranch
+  233  git checkout newbranch
+  234  git log --oneline
+  235  git checkout master
+  236  git log --oneline
+  237  git show 58aa142
+  238  git show 141eb8c
+  239  git checkout newbranch
+  240  touch rebasetest.txt
+  241  notepad rebasetest.txt 
+  242  ls
+  243  git checkout master
+  244  clear
+  245  git log --oneline
+  246  git rebase newbranch
+  247  git log --oneline
+  248  git reflog
+  249  clear
+  250  git log --oneline
+  251  git pull
+  252  clear
+  253  git log --oneline
+  254  ls
+  255  git checkout newbranch
+  256  ls
+  257  rm newbranch1.txt 
+  258  ls
+  259  git checkout -a -m "deleted file"
+  260  git commmit -a -m "deleted file"
+  261  git commit -a -m "deleted file"
+  262  git add .
+  263  git commit -m "rebase file"
+  264  git status
+  265  git log --oneline
+  266  git checkout master
+  267  git merge newbranch
+  268  git log --oneline
+  269  git rebase newbranch
+  270  git status
+  271  git add .
+  272  git status
+  273  git commit -m "reabase conflict commit"
+  274  git rebase newbranch
+  275  git rebase --continue
+  276  git log --oneline
+  277  git checkout newbranch
+  278  git push
+  279  git pull
+  280  git reflog
+  281  git log --oneline
+  282  git push
+  283  cd ..
+  284  cd SecondProject/
+  285  git status
+  286  git init
+  287  git status
+  288  touch firstfile.txt
+  289  notepad firstfile.txt 
+  290  git status
+  291  git add -A
+  292  git status
+  293  git commit -m 'first file in this'
+  294  git log
+  295  git branch branch1
+  296  git branch
+  297  git checkout branch1
+  298  touch newfile.txt
+  299  notepad newfile.txt 
+  300  git add .
+  301  git commit -m 'new file'
+  302  git log
+  303  git checkout master
+  304  clear
+  305  git reflog
+  306  git rebase branch1
+  307  git reflog
+  308  ls
+  309  git log --oneline
+  310  git checkout branch1
+  311  touch secondfile.txt
+  312  notepad secondfile.txt 
+  313  git add .
+  314  git commit -m 'second file'
+  315  git status
+  316  git checkout master
+  317  clear
+  318  git log --oneline
+  319  clear
+  320  ls
+  321  git log --oneline
+  322  git merge branch1
+  323  ls
+  324  git log --oneline
+  325  clear
+  326  git reflog
+  327  git log
+  328  git branch
+  329  git pull
+  330  git branch
+  331  git remote
+  332  git pull origin thirdbranch
+  333  git branch
+  334  git checkout master
+  335  git branch
+  336  git pull origin thirdbranch
+  337  git branch
+  338  git fetch
+  339  git pull
+  340  git branch
+  341  git branch -a
+  342  git checkout thirdbranch
+  343  git status
+  344  ls
+  345  git branch
+  346  git tag
+  347  git log --oneline
+  348  git tag show
+  349  git tag list
+  350  git tag
+  351  cd ..
+  352  git clone https://rajeshkumarmuddamsetty@bitbucket.org/rajeshkumarmuddamsetty/mydemo.git
+  353  cd mydemo/
+  354  git branch
+  355  git branch -a
+  356  git checkout firstbranch
+  357  git branch
+  358  git remote -v
+  359  touch localfile.txt
+  360  notepad localfile.txt 
+  361  git status
+  362  git commit -a -m 'local file'
+  363  git add .
+  364  git status
+  365  git status
+  366  git commit -a -m 'file updated'
+  367  git status
+  368  git log --oneline
+  369  git push
+  370  git push
+  371  git log --oneline
+  372  ls
+  373  cat readme.md
+  374  git log --oneline
+  375  git diff 898766b b72d6a2
+  376  git difftool
+  377  git mergetool
+  378  git diff
+  379  touch office.cmd
+  380  notepad office.cmd 
+  381  touch office.cmd
+  382  note
+  383  notepad office.cmd 
+  384  code .
+  385  git tag show
+  386  git tag
+  387  git remote -v
+  388  git push origin V1.1
+  389  git tag
+  390  git tag -d show
+  391  git tag
+  392  git show V1.1
+  393  clear
+  394  git push origin --delete V1.1
+  395  clear
+  396  git checkout master
+  397  git tag
+  398  git tag -d list
+  399  git tag
+  400  clear
+  401  git log --oneline
+  402  clear
+  403  git branch
+  404  git checkout thirdbranch
+  405  git branch
+  406  git log --oneline
+  407  git checkout newbranch
+  408  git branch -m firstbranch
+  409  git branch
+  410  clear
+  411  git tag
+  412  git log --oneline
+  413  git tag firsttag
+  414  git tag
+  415  git show firsttag
+  416  clear
+  417  git log --oneline
+  418  clear
+  419  git show 6ac9ddf
+  420  git tag
+  421  git log --oneline
+  422  git show firsttag
+  423  ls
+  424  touch tagtest1.txt
+  425  git add .
+  426  git commit -m 'tag file'
+  427  git log --oneline
+  428  git tag
+  429  git checkout firsttag
+  430  git log --oneline
+  431  git checkout firstbranch
+  432  git checkout firsttag
+  433  git checkout firstbranch
+  434  git pull
+  435  clear
+  436  git tag
+  437  git tag -d 9985311889
+  438  git tag
+  439  git checkout firsttag
+  440  git tag -m newtag
+  441  clear
+  442  git tag
+  443  git remote
+  444  git push origin firsttag
+  445  git checkout secondbranch
+  446  git status
+  447  git commit -a -m 'changes'
+  448  git checkout secondbranch
+  449  clear
+  450  git tag
+  451  git pull origin remotetag
+  452  git tag
+  453  git checkout remotetag
+  454  git pull 
+  455  git tag
+  456  exit
+  457  history
+  458  git tag
+  459  git push origin --tags
+  460  git push origin --delete --tags
+  461  git push origin --delete --all
+  462  dotnet
+  463  dotnet build
+  464  git init
+  465  git status
+  466  git add .
+  467  git status
+  468  git commit -m 'added new sample web repo'
+  469  git status
+  470  git remote
+  471  git remote add origin https://RajeshOrganization@dev.azure.com/RajeshOrganization/SampleProject_DotNetCore/_git/SampleWeb
+  472  git remote -v
+  473  git push
+  474  git push --set-upstream origin master
+  475  git branch
+  476  git remote -v
+  477  git status
+  478  git add .
+  479  git status
+  480  git log
+  481  git log --oneline
+  482  git reflog
+  483  git remote
+  484  git remote -v
+  485  git reflog
+  486  git commit --amend 4739db9
+  487  git commit --amend -m "changed the commit message"
+  488  git log
+  489  touch test.txt
+  490  git add .
+  491  git status
+  492  git commit -m 'test file'
+  493  git log
+  494  git commit --amend 4fd15041 
+  495  git commit --amend -m 4fd15041 'new message'
+  496  git rebase -i HEAD~2
+  497  git rebase -i @HEAD~2
+  498  git rebase -i @~2
+  499  git branch
+  500  git checkout master
+  501  git init
+  502  git branch
+  503  ls
+  504  git branch
+  505  git status
+  506  git add -A
+  507  git status
+  508  git commit
+  509  clear
+  510  git status
+  511  git branch
+  512  notepad firstfile.txt 
+  513  git status
+  514  git commit -a -m 'first line added in the file'
+  515  clear
+  516  git log
+  517  git config user.name
+  518  git config user.email
+  519  git remote
+  520  git remote add origin https://github.com/rajesh929/TestProject.git
+  521  git remote
+  522  git remote -v
+  523  git push -u origin master
+  524  clear
+  525  git config user.email
+  526  git config user.email='rajeshkumar.muddamsetty@outlook.com'
+  527  git config user.email
+  528  git config user.email 'rajeshkumar.muddamsetty@outlook.com'
+  529  git config user.email
+  530  git push -u origin master
+  531  git push -u origin master
+  532  git push -u origin master
+  533  git push -u origin master
+  534  git push -u origin master
+  535  cd ..
+  536  git clone https://github.com/rajesh929/java_sample.git
+  537  git remote
+  538  cd java_sample/
+  539  git remote -v
+  540  ls
+  541  git pull
+  542  ls
+  543  git branch
+  544  git branch
+  545  git pull secondbranch
+  546  git branch remote
+  547  git branch
+  548  git branch -d remote
+  549  git status
+  550  clear
+  551  git branch -a
+  552  git checkout secondbranch
+  553  git fetch
+  554  git pull
+  555  git branch -a
+  556  git checkout secondbranch
+  557  git checkout master
+  558  cd ..
+  559  cd TestProject/
+  560  git init
+  561  git log
+  562  history
+  563  history >> mycommands.txt
